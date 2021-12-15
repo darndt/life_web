@@ -17,7 +17,7 @@ fn window_conf() -> Conf {
 async fn main() {
 
     rand::srand(miniquad::date::now().to_bits());
-    let mut biots = BiotCollection::new(600);
+    let mut biots = BiotCollection::new(500);
 
     loop {
         biots.step();
